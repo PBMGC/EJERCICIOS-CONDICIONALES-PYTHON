@@ -1,0 +1,10 @@
+gr=int( input ( "Ingrese los grados: " ) )
+
+if gr==0 : print( "**"*3,"Angulo Nulo","**"*3 )
+elif gr>0 and gr<90: print( "**"*3,"Angulo Agudo","**"*3 )
+elif gr==90: print( "**"*3,"Angulo Recto" )
+elif gr>90 and gr<180: print( "**"*3,"Angulo Obtuso ","**"*3 )
+elif gr==180: print( "**"*3, "Angulo Llano","**"*3 )
+elif gr>180 and gr<360: print( "**"*3,"Angulo Concavo","**"*3 )
+elif gr==360: print( "**"*3,"Angulo Completo","**"*3 )
+else: print( "!!"*3,"Angulo Desconocido","!!"*3 )

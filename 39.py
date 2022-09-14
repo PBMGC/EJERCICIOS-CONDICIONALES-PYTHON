@@ -1,0 +1,12 @@
+H=float(input("Horas totales de Ausencia:"))
+TD=int(input("Tornillos Defectuosos Producidos:"))
+TN=int(input("Tornillos No Defectuosos Producidos:"))
+
+if H<1.5 and TD>300 and TN<10000: print( "!!"*3,"Grado 7","!!"*3 )
+elif TD<300 and H>1.5 and TN<10000: print( "!!"*3,"Grado 8","!!"*3 )
+elif TN>10000 and H>1.5 and TD>300: print( "!!"*3,"Grado 9","!!"*3 )  
+elif H<1.5 and TD<300 and TN<10000: print( "!!"*3,"Grado 12","!!"*3 )
+elif H<1.5 and TN>10000 and TD>300: print( "!!"*3,"Grado 13","!!"*3 )
+elif TD<300 and TN>10000 and H>1.5: print( "!!"*3,"Grado 15","!!"*3 )
+elif H<1.5 and TD<300 and TN>10000: print( "!!"*3,"Grado 20","!!"*3 )
+else: print( "!!"*3,"Grado 5","!!"*3 )
